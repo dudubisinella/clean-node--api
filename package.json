@@ -6,11 +6,11 @@
   "scripts": {
     "start": "node dist/main/api",
     "build": "rimraf dist && tsc -p tsconfig-build.json",
-    "linst": "eslint .",
+    "lint": "eslint .",
     "lint:fix": "npm run lint -- --fix",
     "test": "jest --passWithNoTests --no-cache --runInBand",
     "test:watch": "npm test -- --watchAll",
-    "test:staged": "npmt test -- --findRelatedTests",
+    "test:staged": "npm test -- --findRelatedTests",
     "test:coverage": "npm test -- --coverage",
     "prepare": "husky install"
   },
